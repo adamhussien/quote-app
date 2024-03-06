@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: #D37676 ;
+    font-family: "Poppins", sans-serif;;
+ 
+}
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3rem;
+    background-image: linear-gradient(to bottom, #7F9F80,#6420AA, #9BB0C1 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.conatiner{
+    border-radius: 10px;
+max-width: 35rem;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #fff;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+padding: 2rem;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.quote{
+font-size: clamp(1.2rem, 1.5vh, 3rem);
+font-style: italic;
+font-weight: 500;
+padding: 1rem;
+}
+.author{
+padding: 1.2rem;
+font-size: 1.2rem;
+text-transform: capitalize;
+font-weight: 600;
+}
+.btn{
+    padding: 1rem 1.2rem;
+border: none;
+background-image: linear-gradient(to bottom, #D37676, #EBC49F );
+border-radius: 10px;
+color: #fff;
+font-size: 1rem;
+text-transform: capitalize;
+} 
+@media screen and (max-width: 30rem) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .conatiner {
+       width: 80%;
+    }
+    .quote {
+        font-size: 1rem;
+    }
+    .author {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 0.8rem 1rem;
+        font-size: 0.8rem;
+    }
+}
